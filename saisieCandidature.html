@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 8</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+		
+		<fieldset>
+			<legend>Candidature à un poste de développeur PHP</legend>
+
+			<form action="recapitulation.php" method="GET" name="authentification" >
+
+				<label> Nom :</label>
+				<input type="text" name="nom" required />
+				
+				<br/>
+				
+				<label> Prénom :</label>
+				<input type="text" name="prenom" required />
+				
+				<br/>
+				<br/>
+				
+				<label> Civilité :</label>
+				<br/>
+				<input type="radio" name="civilite" value="mr" />Monsieur
+				<br/>
+				<input type="radio" name="civilite" value="mme" />Madame
+				<br/>
+				<input type="radio" name="civilite" value="melle" />Mademoiselle
+				<br/>
+				<br/>
+				
+				<label>Date de Naissance :</label>
+				<input type="date" name="date" required />
+				<br/>
+				<br/>
+				
+				<label>Numéro de téléphone:</label>
+				<input type="tel" name="telephone" required />
+				<br/>
+				<br/>
+				
+				<label>Email:</label>
+				<input type="email" name="email" required />
+				<br/>
+				<br/>
+		
+				<label>Niveau en PHP</label>
+				<br/>
+				<input type="radio" name="niveau" value="debutant" />Débutant
+				<br/>
+				<input type="radio" name="niveau" value="moyen" />Moyen
+				<br/>
+				<input type="radio" name="niveau" value="bon" />Bon
+				<br/>
+				<br/>
+				
+				<label>Framework pratiqués</label>
+				<br/>
+				<input type="checkbox" name="framework" value="symfony" />Symfony
+				<br/>
+				<input type="checkbox" name="framework" value="codeIgniter" />CodeIgniter
+				<br/>
+				<input type="checkbox" name="framework" value="fuelPHP" />FuelPHP
+				<br/>
+				<input type="checkbox" name="framework" value="cakePHP" />CakePHP
+				<br/>
+				<input type="checkbox" name="framework" value="laravel" />Laravel
+				<br/>
+				<br/>
+				
+				<textarea name="parcours" rows="8" cols="45">
+					Présentation de votre parcours
+				</textarea>
+				</br>
+				</br>
+		
+		
+
+	
+				<input type="submit" value="Valider" />
+				<input type="reset" value="Annuler" />
+				
+				</form>
+
+
+		</fieldset>
+		
+	</body>
+	
+</html>
